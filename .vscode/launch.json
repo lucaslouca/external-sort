@@ -1,0 +1,76 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Build and Debug yak",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/yak/build/src/yak",
+            "args": [
+                "-f",
+                "../../benchmark/data/plop1.csv",
+                "-f",
+                "../../benchmark/data/plop2.csv",
+                "-c",
+                "1, 8",
+                "-c",
+                "5",
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [],
+            "preLaunchTask": "build yak",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "Build and Debug yak (Mac OS X)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/yak/build/src/yak",
+            "args": [
+                "-d",
+                "benchmark/data/",
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "setupCommands": [],
+            "preLaunchTask": "build yak",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "Generate Sample File",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/benchmark/generate/src/genapp",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [],
+            "preLaunchTask": "build genapp",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "Generate Sample File (Mac OS X)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/benchmark/generate/src/genapp",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "setupCommands": [],
+            "preLaunchTask": "build genapp",
+        }
+    ]
+}

@@ -1,2 +1,3 @@
 # external-sort
-Resample a CSV to retain only one event per specified time window
+
+* [Documentation](https://www.fizzbuzzer.com/posts/external-resample-and-sort-csv/)
